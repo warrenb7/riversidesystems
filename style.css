@@ -1,103 +1,107 @@
-/* Global Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #002f6c; /* Deep blue */
-}
-
-h1, p {
-    text-align: center;
-}
-
-/* Lock the website in portrait mode */
-@media (orientation: landscape) {
-    body {
-        display: none;
-    }
+    background-color: #f5f5f5;
 }
 
 /* Navbar Styling */
 .navbar {
-    background-color: #002f6c; /* Deep blue */
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #004c8c; /* Your blue color */
+    padding: 15px;
+    text-align: center;  /* Center the navbar */
 }
 
 .navbar a {
-    float: left;
-    display: block;
     color: white;
-    text-align: center;
-    padding: 14px 20px;
+    padding: 12px;
     text-decoration: none;
-    font-size: 16px;
+    display: block;   /* Make each link take up full width */
+    font-size: 18px;  /* Adjust font size */
+    border-bottom: 1px solid #fff; /* Optional, for better separation */
 }
 
-.navbar a:hover {
-    background-color: #1e3a5f;
-}
-
-/* Header Styling */
-.header {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-}
-
+/* Logo Styling */
 .header img {
-    width: 150px;
+    width: 150px;  /* Adjust logo size */
+    height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto;  /* Center the logo */
 }
 
-/* Contact Icon */
+/* Phone Icon Styling */
 .contact {
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .contact img {
-    width: 50px;
-    vertical-align: middle;
-    margin-right: 10px;
+    width: 30px;  /* Adjust phone icon size */
+    height: auto;
+    margin-right: 10px; /* Space between icon and text */
 }
 
 .contact span {
-    font-size: 18px;
-    color: #002f6c;
-}
-
-/* Content Styling */
-.content {
-    padding: 20px;
-    text-align: center;
-    max-width: 100%;
-}
-
-.content h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.content p {
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
+    font-size: 20px;  /* Increase font size for phone number */
+    font-weight: bold;
 }
 
 /* Footer Styling */
 .footer {
-    background-color: #ffcc00; /* Yellow */
-    color: #002f6c; /* Navy blue text */
+    background-color: yellow;
+    color: #003366; /* Navy Blue Text */
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 15px;
+    position: relative;
     bottom: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 767px) {
+    /* Navbar for Mobile */
+    .navbar {
+        text-align: left; /* Left-align the navbar for mobile */
+    }
+
+    .navbar a {
+        font-size: 20px; /* Larger font size for readability */
+        padding: 15px 0;  /* Increase padding for mobile links */
+    }
+
+    /* Logo on Mobile */
+    .header img {
+        width: 120px;  /* Smaller logo for mobile */
+    }
+
+    /* Phone Icon Styling for Mobile */
+    .contact img {
+        width: 25px;  /* Smaller icon */
+    }
+
+    .contact span {
+        font-size: 18px;  /* Adjust text size for phone number */
+    }
+
+    /* Footer Styling for Mobile */
+    .footer {
+        margin-top: 20px;
+    }
+}
+
+/* Extra Adjustments (General Mobile Layout) */
+
+/* Prevent body from going off-screen */
+body {
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+/* Ensuring the footer doesn't bounce and stays in place */
+.footer {
+    position: relative;
+    margin-top: 20px;
 }
