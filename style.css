@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #002f6c; /* Deep blue */
+}
+
+h1, p {
+    text-align: center;
+}
+
+/* Lock the website in portrait mode */
+@media (orientation: landscape) {
+    body {
+        display: none;
+    }
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #002f6c; /* Deep blue */
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: #1e3a5f;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contact Icon */
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contact span {
+    font-size: 18px;
+    color: #002f6c;
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #ffcc00; /* Yellow */
+    color: #002f6c; /* Navy blue text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
