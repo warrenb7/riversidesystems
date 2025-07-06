@@ -24,12 +24,14 @@ html, body {
   background-color: var(--soft-white);
   color: var(--slate-grey);
   overflow-x: hidden;
+  /* Remove height and overflow hidden here */
 }
 
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh; /* let body grow */
+  overflow-y: auto;  /* allow vertical scroll */
 }
 
 /* Navigation Bar */
